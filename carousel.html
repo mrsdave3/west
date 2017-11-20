@@ -1,0 +1,46 @@
+<!DOCTYPE html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>West Church</title>
+<style>
+
+.container {
+	width:70%;
+	position:relative;
+	margin:auto;
+	padding-bottom:20px;
+}
+
+.container img {
+	width:100%;
+	height:320px;
+	position:relative;
+}
+</style>
+</head>
+
+<script type="text/javascript">
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+
+<body onLoad="carousel()">
+<div class="container">
+<a href="flowerfestival.php"><img class="slides" src="images/flowerfest.png" alt="Christmas Tree and Flower Festival"/></a>
+<a href="images/music.pdf"><img class="slides" src="images/music.png" alt="Music for Christmas"/></a>
+<a href="#"><img class="slides" src="images/lifeexplored.jpg" alt="Life Explored"/></a>
+</div>
+</body>
+</html>
