@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+h {
+	color:#FFF;
+	font-size:16px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+}
+h2 {
+	color:#FFF;
+	font-size:16px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+}
+
+#rcorners1 {
+    border-radius: 25px;
+    background: #900;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+
+td {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	
+}
+
+p {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+.pb {
+	background-color:#333333;	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color: #FFF;
+	
+}
+
+
+.div {
+    background-color: #FF0000;
+}
+
+footer { 
+    display: block;
+	background-color:#900;
+	color: #FFF;
+	font-size:14px;
+}
+

@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html {
+	margin-top: 0px;
+	padding: 0px;
+	font: Verdana, Geneva, sans-serif;
+}
+
+
+ul {
+	height:40px;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	position:initial;
+	z-index:10;
+}
+
+ul li {
+	float: left;
+	width: 25%;
+	height:40px;
+	background-color:red;
+	line-height:40px;
+	text-align:center;
+	font-size:20px;
+	position:initial;
+	z-index:10;
+}
+
+ul li a {
+	text-decoration:none;
+	color: white;
+	display:block;
+	z-index:10;
+}
+
+ul li a:hover {
+	background-color:grey;
+}
+/*extra bit*/
+ul li ul li {
+	display:none;
+	width:100%;
+	position:relative;
+	z-index:10;
+}
+
+ul li:hover ul li {
+	display: block;
+}
+
+ul li:hover ul li a {
+	display: block;
+}
+.container {
+	width:80%;
+	height:auto;
+	text-align:center;
+	margin-bottom:10px;
+	margin: 0 auto;
+	}
+	
+.container img {
+	max-width:100%;
+	min-width:250px;
+	max-height:200px;
+	}	
+	
+.space {
+	width:100%;
+	height:10px;
+}
+	
+#toggle {
+	display:none;
+}
+
+.dropdownMenus {
+	margin-bottom:20px;
+}
+@media only screen and (max-width: 500px) {
+	.container {
+		width:100%
+	}
+	
+	.container img {
+	width:100%;
+	max-width:100%;
+	}	
+	
+	
+	ul li {
+		width:100%;
+		display:block;
+		z-index:10;
+	}	
+	
+	ul li ul li {
+		width: 100%; 
+		background-color:#300; 
+		float:left;
+		position:relative;
+		z-index:10;
+	}
+	
+	ul li:active ul li {
+	display: block;
+}
+
+.nav {
+	border-bottom:1px solid #EAEAEB;
+	height:70px;
+	line-height:70px;
+	text-align:right;
+	background:red;
+	z-index:10;
+	position:relative; 
+}
+
+label {
+	margin: 0 40px 0 0;
+	font-size:26px;
+	line-height:70px;
+	display:block;
+	cursor:pointer;
+	width:40px;
+	float:right;
+	color:white;
+}
+#toggle {
+	display:none;
+}
+
+#toggle:checked + .dropdownMenus {
+	display:inline-block;	
+}
+
+.dropdown {
+	background-color:red;
+	cursor:pointer;
+	border:none;
+	}
+	
+.dropdown:hover, .dropdown:focus {
+	background-color:grey;
+}
+
+.dropdownMenus {
+	margin-bottom:20px;
+	position:relative;
+	display:none;
+	width:100%;
+	line-height:70px;
+}
+
+.content {
+	display:none;
+	position:absolute;
+	background-color:#333;
+	width:100%;
+	z-index:1;
+}
+
+.content a {
+	color:white;
+	text-decoration:none;
+	display:block;
+}
+
+.show {display:block;}
+
+}
