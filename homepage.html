@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Untitled Document</title>
+<style type="text/css">
+* {
+	margin:0px;
+	padding:0px
+	}
+	
+body {
+	font-family:Verdana, Geneva, sans-serif;
+} 
+
+figure {
+	float: left;
+	width: 30%;
+	text-align: center;
+	display: table;
+	margin: 10px;
+}
+figure a{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	max-width: 150px;
+	}
+	
+figure img {
+	width: 100%;
+	max-width: 150px;
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+
+figure figcaption {
+	width: 30%;
+	text-align: center;
+	font:"Arial Black", Gadget, sans-serif;
+	font-size: 30px;
+	display: table-caption;
+}
+
+section::after, section:before{
+	content:"";
+	display:block;
+}
+section::after{
+	clear: both;
+}
+	
+@media only screen and (max-width: 500px){
+figure {
+	width: 100%;
+}
+
+@media only screen and (max-width: 800px){
+figure {
+	width: 47%;
+}
+
+</style>
+</head>
+
+<body>
+
+<figure>
+<a href="#"><img src="calendar.png" alt="Calendar"  /></a>
+<figcaption>Calendar</figcaption>
+</figure>
+
+<figure>
+<a href="#"><img src="news.jpg" alt="News" /></a>
+<figcaption>Bulletin</figcaption>
+</figure>
+
+<figure>
+<a href="#"><img src="headphones.jpg" alt="Listen Online" /></a>
+<figcaption>Listen Online</figcaption>
+</figure>
+
+<figure>
+<a href="#"><img src="map.png" alt="Map" /></a>
+<figcaption>Find Us</figcaption>
+</figure>
+
+</body>
+</html>
